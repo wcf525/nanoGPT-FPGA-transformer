@@ -73,7 +73,4 @@ nanoGPT-FPGA-transformer
 │   └── nanogpt_core.hwh
 
 └── prompts    ← AI 对话日志
-    ├──  claude_prompts_log.md
-
-    └── gemini_prompts_log.md
 
