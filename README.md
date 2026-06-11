@@ -20,51 +20,60 @@
 
 本项目严格遵循工业级 SoC 开发的软硬件解耦与测试分离规范，目录树结构如下：
 
-nanoGPT-FPGA-transformer/
+nanoGPT-FPGA-transformer
 
 ├── README.md                    ← 项目说明
 
-├── M1\_software/
+├── M1_software
 
-│   ├── export\_weights.py        ← 量化导出脚本
+│   ├── export_weights.py        ← 量化导出脚本
 
 │   └── weight.h                 ← 导出的权重文件
 
-├── M2\_hls/
+├── M2_hls
 
-│   ├── matmul/
+│   ├── matmul
 
 │   │   ├── matmul.cpp   ← 内核
 
 │   │   └── tb.cpp     ← tb
 
-│   ├── attention/
+│   ├── attention
 
 │   │   ├── attention.cpp
 
 │   │   └── tb.cpp
 
-│   ├── layernorm/
+│   ├── layernorm
 
 │   │   ├── layernorm.cpp
 
 │   │   └── tb.cpp
 
-│   └── gelu/
+│   └── gelu
 
 │       ├── gelu.cpp
 
 │       └── tb.cpp
 
-├── M2\_ip/
+├── M2_ip    ← ip核
 
-│   ├── xilinx\_com\_hls\_matmul\_fpga\_1\_0.zip
+│   ├── xilinx_com_hls_matmul_fpga_1_0.zip
 
-│   ├── xilinx\_com\_hls\_multi\_head\_attn\_1\_0.zip
+│   ├── xilinx_com_hls_multi_head_attn_1_0.zip
 
-│   ├── xilinx\_com\_hls\_layernorm\_fpga\_1\_0.zip
+│   ├── xilinx_com_hls_layernorm_fpga_1_0.zip
 
-│   └── xilinx\_com\_hls\_gelu\_fpga\_1\_0.zip
+│   └── xilinx_com_hls_gelu_fpga_1_0.zip
 
-└── prompts/← AI 对话日志
+├── M3_nanogpt_core    ← bit流
+
+│   ├──  nanogpt_core.bit
+
+│   └── nanogpt_core.hwh
+
+└── prompts    ← AI 对话日志
+    ├──  claude_prompts_log.md
+
+    └── gemini_prompts_log.md
 
