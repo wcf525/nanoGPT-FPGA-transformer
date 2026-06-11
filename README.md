@@ -66,9 +66,5 @@ nanoGPT-FPGA-transformer/
 
 │   └── xilinx\_com\_hls\_gelu\_fpga\_1\_0.zip
 
-└── prompts/
-
-    ├── claude\_prompts\_log.md    ← AI 对话日志
-
-    └── gemini\_prompts\_log.md    ← AI 对话日志
+└── prompts/← AI 对话日志
 
